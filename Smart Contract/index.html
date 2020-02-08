@@ -1,0 +1,49 @@
+<html lang="en" >
+
+
+<head>
+<meta charset="utf-8" />
+<title>Hash Calculator</title>
+
+<link href="main.css" rel="stylesheet" type="text/css" />
+<script src="bundl.js"></script>
+<script src="bundle.js"></script>
+
+
+
+
+</head>
+
+
+<body bgcolor=black>
+
+<font color=white><header>
+</header>
+<center>
+<div class="container">
+<div class="contr"><h2><center>Upload document</center></h2></div>
+<div class="upload_form_cont">
+<div>
+  <input type="file" id="file"/>
+  <input type="button" onclick="calculate();" value="Calculate" class="btn primary" />
+</div>
+<a><center>MD5 Checksum Generated: </center></a>
+<b id="checksum"></b>
+<p></p>
+<a>Bitcoin Address Generated: </a>
+<p></p>
+<b id="address"></b>
+<p></p>
+<a id="site" target="Just">Blockchain Explorer Link</a><iframe src="https://blockchain.info" name="Just" width="100%" height="30%" frameBorder="0"></iframe>
+<h1>What is this for?</h1>
+<h3>This site is meant as a tool to allow people to digitally sign documents using Bitcoin.</h3>
+<h3>The address is generated based on an md5sum of the file. Once the address is generated, all the people who wish to sign send btc to that address. Later on, if someone wants to check who agreed to the document the original file can be uploaded and they can check blockchain.info to see who sent btc.</h3>
+<h3>This can also be used as a method of preventing tampering. If two people have a dispute over the original document, they can upload a file and see which document leads to the address they both sent to.</h3>
+</center>
+</div>
+</font>
+</body>
+
+
+</html>
+
